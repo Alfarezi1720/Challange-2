@@ -20,9 +20,9 @@ function isValidPassword(givenPassword) {
   );
 }
 
-console.log(isValidPassword("Meong2021"));
-console.log(isValidPassword("meong2021"));
-console.log(isValidPassword("@eong"));
-console.log(isValidPassword("Meong2"));
-console.log(isValidPassword(0));
-console.log(isValidPassword());
+console.log(isValidPassword("Meong2021")); //karena memenuhi reuirment
+console.log(isValidPassword("meong2021")); //karena tidak memenuhi requirment karena huruf "m" kecil
+console.log(isValidPassword("@eong")); //karena tidak ada angka dan terdiri hanya 5 huruf
+console.log(isValidPassword("Meong2")); //karena Meong2 hanya hanya 6 huruf
+console.log(isValidPassword(0)); //Error: Parameter harus berupa string
+console.log(isValidPassword()); //Error: Parameter tidak boleh kosong

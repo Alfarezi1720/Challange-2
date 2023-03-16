@@ -43,4 +43,4 @@ function getTotalPenjualan(dataPenjualan) {
   return totalPenjualan;
 }
 
-console.log(getTotalPenjualan(dataPenjualanPakAldi));
+console.log(getTotalPenjualan(dataPenjualanPakAldi)); //output yang diahsilkan adalah 307 dari setiap value property `total terjual`, yaitu 90 + 37 + 90 + 90

@@ -1,19 +1,19 @@
 function getAngkaTerbesarKedua(dataNumbers) {
   if (!Array.isArray(dataNumbers)) {
-    return "Parameter harus berupa array";
-  }
-
-  if (!dataNumbers || dataNumbers.length === 0) {
-    return "Parameter tidak boleh kosong";
+    return "Parameter harus berupa array!";
   }
 
   if (dataNumbers.length < 2) {
-    return "Array harus memiliki minimal 2 angka";
+    return "Harus ada input array dengan minimal 2 angka!";
   }
 
-  const uniqueNumbers = [...new Set(dataNumbers)]; // Menghapus duplikat angka
-  const sortedNumbers = uniqueNumbers.sort((a, b) => b - a); // Mengurutkan angka dari terbesar ke terkecil
-  return sortedNumbers[1]; // Mengambil angka terbesar kedua
+  const maxNumber = Math.max(...dataNumbers);
+  const maxNumberIndex = dataNumbers.indexOf(maxNumber);
+  dataNumbers.splice(maxNumberIndex, 1);
+
+  const secondMaxNumber = Math.max(...dataNumbers);
+
+  return secondMaxNumber;
 }
 
 const dataNumbers = [9, 4, 7, 7, 4, 3, 2, 2, 8];

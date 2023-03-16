@@ -90,4 +90,4 @@ function getInfoPenjualan(dataPenjualan) {
   };
 }
 
-console.log(getInfoPenjualan(dataPenjualanNovel));
+console.log(getInfoPenjualan(dataPenjualanNovel)); //output yang dihasilkan akan memenuhi syarat-syarat yang telah ditentukan

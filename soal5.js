@@ -1,12 +1,12 @@
 function getSplitName(personName) {
   if (typeof personName !== "string") {
-    return "Parameter harus bertipe string!";
+    return "Error: This Parameter Must Be String";
   }
 
   const nameArr = personName.split(" ");
 
   if (nameArr.length > 3) {
-    return "Error: This function is only for 3 characters name";
+    return "Error: This function can't more than 3 characters name";
   }
 
   let firstName = nameArr[0];
